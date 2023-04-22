@@ -5,12 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node backend/server",
-    "server": "nodemon backend/server",
+     "start": "node server",
+    "server": "nodemon server",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm start\" \"npm run client\" ",
-    "data:import": "node backend/seeder.js",
-    "data:destroy": "node backend/seeder.js -d"
+    "data:import": "node seeder.js",
+    "data:destroy": "node seeder.js -d"
   },
   "author": "ashecommersproject",
   "license": "",
